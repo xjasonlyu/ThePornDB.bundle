@@ -191,7 +191,8 @@ class ThePornDBScenesAgent(Agent.Movies):
                 role.name = performer['name']
                 role.photo = performer['face']
 
-            role.role = performer['name']
+            # NOTE: Remove actor role field.
+            # role.role = performer['name']
 
             log.debug('[TPDB Agent] Adding Actor: "%s": "%s"' % (role.name, role.photo))
 
